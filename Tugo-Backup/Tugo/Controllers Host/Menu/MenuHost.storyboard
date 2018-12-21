@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aOB-Xn-Xlx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExperiencesHost-->
+        <scene sceneID="3Yh-so-FkM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExperiencesHost" id="Tij-7R-TYt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRQ-kA-52b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1292" y="-1874"/>
+        </scene>
+        <!--Tripshost-->
+        <scene sceneID="UyW-IU-OuX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tripshost" id="dcY-xp-DEv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5m-KR-952" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1269" y="-1777"/>
+        </scene>
+        <!--CalendarHost-->
+        <scene sceneID="I0Z-jJ-s5e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CalendarHost" id="bQZ-qc-wng" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePC-7k-i3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1268" y="-1680"/>
+        </scene>
+        <!--Main Tab Bar Host Controller-->
+        <scene sceneID="Ve1-Kg-6dy">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarHostController" id="aOB-Xn-Xlx" customClass="MainTabBarHostController" customModule="Tugo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Agx-4Z-Peq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.43921568630000002" green="0.25098039220000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="bottomtabBar" destination="Agx-4Z-Peq" id="Ie4-AB-Vsj"/>
+                        <segue destination="Tij-7R-TYt" kind="presentation" identifier="MenuToNewExperienceHost" id="qoM-uJ-re7"/>
+                        <segue destination="dcY-xp-DEv" kind="presentation" identifier="MenuToTripHost" modalTransitionStyle="crossDissolve" id="70D-GW-GL3"/>
+                        <segue destination="bQZ-qc-wng" kind="presentation" identifier="MenuHostToCalendar" modalTransitionStyle="crossDissolve" id="iFK-MI-Xwy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AU-2K-Mdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1877" y="-1776"/>
+        </scene>
+    </scenes>
+</document>

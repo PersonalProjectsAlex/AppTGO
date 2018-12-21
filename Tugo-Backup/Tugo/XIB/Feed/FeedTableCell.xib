@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedTableCell" customModule="Tugo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedTableCell" rowHeight="559" id="KGk-i7-Jjw" customClass="FeedTableCell" customModule="Tugo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="559"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="558.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guatemala" translatesAutoresizingMaskIntoConstraints="NO" id="88e-yj-LHz">
+                        <rect key="frame" x="18" y="31" width="284" height="382"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="382" id="tof-p6-QuZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view clipsSubviews="YES" alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7td-bd-16j">
+                        <rect key="frame" x="18" y="31" width="284" height="382"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-6b-AGU">
+                                <rect key="frame" x="8" y="339" width="36" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="HsD-6J-Vm2"/>
+                                    <constraint firstAttribute="width" constant="36" id="pjm-Gy-Wvv"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-cc-rl1" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="54" y="145" width="176" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dZ8-6b-AGU" firstAttribute="bottom" secondItem="7td-bd-16j" secondAttribute="bottomMargin" id="LbR-Lw-Ds6"/>
+                            <constraint firstAttribute="height" constant="382" id="Mq0-ex-EKT"/>
+                            <constraint firstAttribute="bottom" secondItem="ZIh-cc-rl1" secondAttribute="bottom" constant="145" id="YsW-rR-sqa"/>
+                            <constraint firstItem="ZIh-cc-rl1" firstAttribute="top" secondItem="7td-bd-16j" secondAttribute="top" constant="145" id="eH6-tz-zve"/>
+                            <constraint firstAttribute="trailing" secondItem="ZIh-cc-rl1" secondAttribute="trailing" constant="54" id="fTV-Vu-BVK"/>
+                            <constraint firstItem="ZIh-cc-rl1" firstAttribute="leading" secondItem="7td-bd-16j" secondAttribute="leading" constant="54" id="h7g-ii-Slz"/>
+                            <constraint firstItem="dZ8-6b-AGU" firstAttribute="leading" secondItem="7td-bd-16j" secondAttribute="leadingMargin" id="r0B-Gx-OdJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="i5q-wV-gi6">
+                        <rect key="frame" x="20" y="421" width="284" height="71"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1tw-LN-EsI">
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visitanos en Huhetenango" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d67-Eg-aO8">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="zbE-9p-d2R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g0e-Pb-SBQ">
+                                        <rect key="frame" x="0.0" y="28" width="284" height="15"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvd-kP-aXw">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Zob-S9-pWv"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="ex7-Wt-rJT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                                                <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPO-qG-ekY" customClass="CosmosView" customModule="Cosmos">
+                                                <rect key="frame" x="189" y="0.0" width="95" height="15"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="jDL-dK-wYe"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU6-Ze-rqR">
+                                <rect key="frame" x="0.0" y="52" width="284" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="1Lq-bW-kDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
+                                <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="vwe-Zz-gRV"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7td-bd-16j" firstAttribute="trailing" secondItem="88e-yj-LHz" secondAttribute="trailing" id="5wi-5M-ChT"/>
+                    <constraint firstItem="i5q-wV-gi6" firstAttribute="top" secondItem="7td-bd-16j" secondAttribute="bottom" constant="8" symbolic="YES" id="Gaa-9f-7JL"/>
+                    <constraint firstAttribute="trailing" secondItem="88e-yj-LHz" secondAttribute="trailing" constant="18" id="Jrm-ie-pbL"/>
+                    <constraint firstAttribute="trailing" secondItem="7td-bd-16j" secondAttribute="trailing" constant="18" id="R13-hL-9hx"/>
+                    <constraint firstItem="7td-bd-16j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="SnW-hW-NSM"/>
+                    <constraint firstItem="7td-bd-16j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="VHN-T4-3f4"/>
+                    <constraint firstItem="7td-bd-16j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="Vqp-on-fce"/>
+                    <constraint firstItem="7td-bd-16j" firstAttribute="leading" secondItem="88e-yj-LHz" secondAttribute="leading" id="ZXj-Ne-B1d"/>
+                    <constraint firstItem="88e-yj-LHz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ZtM-TQ-ZWr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7td-bd-16j" secondAttribute="trailing" constant="2" id="f62-md-mVY"/>
+                    <constraint firstAttribute="trailing" secondItem="i5q-wV-gi6" secondAttribute="trailing" constant="16" id="kw2-9x-hwG"/>
+                    <constraint firstItem="i5q-wV-gi6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oGb-rd-Uoc"/>
+                    <constraint firstItem="i5q-wV-gi6" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qEC-Ps-cKF"/>
+                    <constraint firstItem="7td-bd-16j" firstAttribute="top" secondItem="88e-yj-LHz" secondAttribute="top" id="wby-bR-Kfc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="88e-yj-LHz" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="18" id="ThY-KA-Skv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="activyIndicator" destination="ZIh-cc-rl1" id="Ja6-qJ-rWq"/>
+                <outlet property="averageView" destination="wPO-qG-ekY" id="SCm-vi-MdQ"/>
+                <outlet property="experienceImageView" destination="88e-yj-LHz" id="o5U-a0-Gfk"/>
+                <outlet property="hostnameLabel" destination="EU6-Ze-rqR" id="2W4-Ec-feq"/>
+                <outlet property="imageHeightConstraint" destination="tof-p6-QuZ" id="oJ1-PA-8JK"/>
+                <outlet property="maskHeightContraint" destination="Mq0-ex-EKT" id="zJ9-WB-L91"/>
+                <outlet property="maskUIView" destination="7td-bd-16j" id="0Nf-D2-gY8"/>
+                <outlet property="nameexperienceLabel" destination="d67-Eg-aO8" id="jSH-ko-FnQ"/>
+                <outlet property="priceLabel" destination="dvd-kP-aXw" id="KbM-28-MhK"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="290.10494752623691"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="guatemala" width="576" height="900"/>
+    </resources>
+</document>

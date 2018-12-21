@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="133" id="KGk-i7-Jjw" customClass="ChatCell" customModule="Tugo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6qC-ep-69M">
+                        <rect key="frame" x="19" y="46" width="12" height="12"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tpk-NG-6Em" customClass="RoundedImageView" customModule="Tugo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="12" width="50" height="0.0"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.40000000000000002" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="RKr-SF-uEt"/>
+                            <constraint firstAttribute="height" constant="12" id="TEs-p8-06Y"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S2F-cG-TYK" userLabel="Image Stack View">
+                        <rect key="frame" x="36" y="35" width="38" height="38"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tugologo" translatesAutoresizingMaskIntoConstraints="NO" id="fd5-81-pjv" customClass="RoundedImageView" customModule="Tugo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="2uB-Os-RNa"/>
+                            <constraint firstAttribute="height" constant="38" id="Bdr-DT-6il"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgm-FR-MvD">
+                        <rect key="frame" x="91" y="35" width="213" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PYZ-FO-w8K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
+                        <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-Dq-nPZ">
+                        <rect key="frame" x="91" y="64" width="213" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="N9y-Vk-iVn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgR-zU-kyP">
+                        <rect key="frame" x="210" y="11" width="94" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="zqS-SD-nlN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svP-Iz-U1S">
+                        <rect key="frame" x="91" y="91" width="213" height="23"/>
+                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="17"/>
+                        <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CwS-Dq-nPZ" firstAttribute="trailing" secondItem="svP-Iz-U1S" secondAttribute="trailing" id="4Pz-5X-sj8"/>
+                    <constraint firstItem="dgm-FR-MvD" firstAttribute="top" secondItem="S2F-cG-TYK" secondAttribute="top" id="4YR-cC-fsX"/>
+                    <constraint firstItem="6qC-ep-69M" firstAttribute="leading" secondItem="S2F-cG-TYK" secondAttribute="trailing" constant="-55" id="A3O-At-BL8"/>
+                    <constraint firstItem="S2F-cG-TYK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="I0o-qr-e28"/>
+                    <constraint firstItem="dgm-FR-MvD" firstAttribute="top" secondItem="fgR-zU-kyP" secondAttribute="bottom" constant="8" symbolic="YES" id="JRl-Mc-pLR"/>
+                    <constraint firstItem="CwS-Dq-nPZ" firstAttribute="leading" secondItem="svP-Iz-U1S" secondAttribute="leading" id="M81-bd-sed"/>
+                    <constraint firstItem="dgm-FR-MvD" firstAttribute="leading" secondItem="S2F-cG-TYK" secondAttribute="trailing" constant="17" id="NkT-P7-bNG"/>
+                    <constraint firstItem="svP-Iz-U1S" firstAttribute="top" secondItem="CwS-Dq-nPZ" secondAttribute="bottom" constant="6" id="PT2-Z4-8t1"/>
+                    <constraint firstItem="6qC-ep-69M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="35" id="Wmb-8X-tOr"/>
+                    <constraint firstItem="S2F-cG-TYK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="24" id="YU4-Z6-pje"/>
+                    <constraint firstItem="fgR-zU-kyP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dDP-Pa-wgZ"/>
+                    <constraint firstItem="fgR-zU-kyP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eDH-3x-7F8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="svP-Iz-U1S" secondAttribute="bottom" constant="8" id="ehv-nh-yhy"/>
+                    <constraint firstItem="fgR-zU-kyP" firstAttribute="trailing" secondItem="dgm-FR-MvD" secondAttribute="trailing" id="fQH-P5-tnp"/>
+                    <constraint firstItem="dgm-FR-MvD" firstAttribute="leading" secondItem="CwS-Dq-nPZ" secondAttribute="leading" id="nfC-OO-mUd"/>
+                    <constraint firstItem="CwS-Dq-nPZ" firstAttribute="top" secondItem="dgm-FR-MvD" secondAttribute="bottom" constant="8" symbolic="YES" id="pls-Dw-XHa"/>
+                    <constraint firstItem="dgm-FR-MvD" firstAttribute="trailing" secondItem="CwS-Dq-nPZ" secondAttribute="trailing" id="tjZ-bA-LYn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lastMessageLabel" destination="svP-Iz-U1S" id="fqJ-t1-2Iw"/>
+                <outlet property="newMessageIndicator" destination="Tpk-NG-6Em" id="4GG-fD-hTw"/>
+                <outlet property="profileImageview" destination="fd5-81-pjv" id="8nw-gy-COK"/>
+                <outlet property="senderLabel" destination="dgm-FR-MvD" id="PI8-ox-cBF"/>
+                <outlet property="titleLabel" destination="CwS-Dq-nPZ" id="kuL-52-ul1"/>
+                <outlet property="updatedAtLabel" destination="fgR-zU-kyP" id="8M0-y9-cZg"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="98.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tugologo" width="115" height="44"/>
+    </resources>
+</document>

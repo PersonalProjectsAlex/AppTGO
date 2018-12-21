@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentsTableCell" rowHeight="127" id="KGk-i7-Jjw" customClass="CommentsTableCell" customModule="Tugo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Csa-WU-0m6">
+                        <rect key="frame" x="16" y="11" width="288" height="107"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-8I-0vT">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="107"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cEQ-8C-BG2" customClass="RoundedImageView" customModule="Tugo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="16" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="OZe-aw-7dG"/>
+                                            <constraint firstAttribute="height" constant="42" id="lwL-Mh-axT"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cEQ-8C-BG2" firstAttribute="top" secondItem="1wT-8I-0vT" secondAttribute="top" constant="16" id="Kjb-wK-D37"/>
+                                    <constraint firstAttribute="trailing" secondItem="cEQ-8C-BG2" secondAttribute="trailing" id="Rkt-w8-u2v"/>
+                                    <constraint firstItem="cEQ-8C-BG2" firstAttribute="leading" secondItem="1wT-8I-0vT" secondAttribute="leading" id="daz-vk-w5O"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zzr-qE-qpM">
+                                <rect key="frame" x="71" y="0.0" width="217" height="107"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3vI-5p-oMb">
+                                        <rect key="frame" x="0.0" y="0.0" width="217" height="88"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6qI-wN-tS7">
+                                                <rect key="frame" x="0.0" y="0.0" width="217" height="43.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carlos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-IQ-ajx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="217" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="29" id="iVW-Rx-jof"/>
+                                                            <constraint firstAttribute="width" constant="217" id="yUs-9a-xLs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
+                                                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjU-2x-9ZJ" customClass="CosmosView" customModule="Cosmos">
+                                                        <rect key="frame" x="0.0" y="28.5" width="90" height="15"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="T7D-Ea-cwN"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                                <color key="value" red="0.91372549020000005" green="0.40000000000000002" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="e8P-IQ-ajx" secondAttribute="trailing" id="NVK-gh-WdY"/>
+                                                    <constraint firstAttribute="height" constant="43.5" id="PiD-sE-AYU"/>
+                                                    <constraint firstItem="kjU-2x-9ZJ" firstAttribute="top" secondItem="e8P-IQ-ajx" secondAttribute="bottom" constant="-0.5" id="ZeI-RL-ZDd"/>
+                                                    <constraint firstItem="e8P-IQ-ajx" firstAttribute="leading" secondItem="6qI-wN-tS7" secondAttribute="leading" id="dfI-8M-d6G"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esto es una prueba de texto para ver si funciona en salto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2F-3l-GBd">
+                                                <rect key="frame" x="0.0" y="44.5" width="217" height="43.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Cuf-oD-dSF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                                <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="H2F-3l-GBd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6qI-wN-tS7" secondAttribute="bottom" constant="1" id="dKn-YQ-EqN"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88" id="x2L-A5-SEU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="S00-nc-4Uy"/>
+                                    <constraint firstItem="3vI-5p-oMb" firstAttribute="top" secondItem="zzr-qE-qpM" secondAttribute="top" id="Xay-rK-Bi0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Csa-WU-0m6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MXo-zS-vYV"/>
+                    <constraint firstItem="Csa-WU-0m6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Qok-dR-Ver"/>
+                    <constraint firstAttribute="bottom" secondItem="Csa-WU-0m6" secondAttribute="bottom" constant="8.5" id="R2g-LY-eua"/>
+                    <constraint firstAttribute="trailing" secondItem="Csa-WU-0m6" secondAttribute="trailing" constant="16" id="xGD-Pw-1Uz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentLabel" destination="H2F-3l-GBd" id="QwS-6X-thb"/>
+                <outlet property="rateView" destination="kjU-2x-9ZJ" id="Wtw-Sy-1Cv"/>
+                <outlet property="userImageView" destination="cEQ-8C-BG2" id="OYH-TG-Vuv"/>
+                <outlet property="userLabel" destination="e8P-IQ-ajx" id="baK-Td-3v1"/>
+            </connections>
+            <point key="canvasLocation" x="121.59999999999999" y="130.88455772113943"/>
+        </tableViewCell>
+    </objects>
+</document>

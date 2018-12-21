@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavouritesCollectionCell" id="gTV-IL-0wX" customClass="FavouritesCollectionCell" customModule="Tugo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SelectedActivityTravelerGradient" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-Rz-Fpa">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="109"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SYd-Zg-QGi">
+                        <rect key="frame" x="14" y="16" width="72" height="77"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5nQ-go-Pmw">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCv-1A-soe">
+                                <rect key="frame" x="0.0" y="58" width="72" height="19"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="OIo-Rz-Fpa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3ae-BY-wyL"/>
+                <constraint firstItem="OIo-Rz-Fpa" firstAttribute="centerX" secondItem="SYd-Zg-QGi" secondAttribute="centerX" id="PnW-O8-zmC"/>
+                <constraint firstItem="OIo-Rz-Fpa" firstAttribute="centerY" secondItem="SYd-Zg-QGi" secondAttribute="centerY" id="eLE-Fs-YLO"/>
+                <constraint firstItem="OIo-Rz-Fpa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ekt-Rv-x5d"/>
+                <constraint firstItem="SYd-Zg-QGi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="kkK-vc-4Ls"/>
+                <constraint firstItem="SYd-Zg-QGi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nVN-7b-koe"/>
+                <constraint firstItem="SYd-Zg-QGi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="oHJ-bw-Fda"/>
+                <constraint firstItem="SYd-Zg-QGi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="rTl-lZ-DQA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="100" height="109"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthView">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColorView">
+                    <color key="value" red="0.91239912178235005" green="0.90799139655634831" blue="0.91680684700835169" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="activityImageView" destination="5nQ-go-Pmw" id="yE4-7U-x4L"/>
+                <outlet property="nameLabel" destination="QCv-1A-soe" id="wom-Jv-nXK"/>
+                <outlet property="selectedImageView" destination="OIo-Rz-Fpa" id="Bs7-Na-yGc"/>
+            </connections>
+            <point key="canvasLocation" x="57.600000000000001" y="83.208395802098963"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SelectedActivityTravelerGradient" width="125" height="125"/>
+    </resources>
+</document>

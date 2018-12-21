@@ -1,0 +1,6 @@
+framework module AEImage {
+  umbrella header "AEImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_Tugo {
+  umbrella header "Pods-Tugo-umbrella.h"
+
+  export *
+  module * { export * }
+}
